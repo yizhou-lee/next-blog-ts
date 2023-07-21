@@ -7,7 +7,7 @@ export default function Home() {
         <span className="whitespace-nowrap">
           I&apos;m <span className="font-bold">Yeezo</span>.&nbsp;
         </span>
-        <span>I'm a software engineer.</span>
+        <span>I&apos;m a software engineer.</span>
       </p>
       <p className="mb-12 text-3xl text-center dark:text-white">
         This blog website is my creative space where I document and share my
