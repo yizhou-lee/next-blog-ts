@@ -11,7 +11,7 @@ export default function Navbar() {
             href="/"
             className="text-white/90 no-underline hover:text-white"
           >
-            Yeezo
+            Yeezo Blog
           </Link>
         </h1>
         <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-5xl">
