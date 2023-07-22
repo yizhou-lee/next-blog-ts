@@ -7,7 +7,11 @@ export default function ModeToggleButton() {
   const [theme, setTheme] = useState<string>();
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (
+      localStorage.getItem("theme") === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
       setTheme("dark");
     } else {
       setTheme("light");
@@ -17,8 +21,10 @@ export default function ModeToggleButton() {
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [theme]);
 
