@@ -1,6 +1,6 @@
 ---
 title: "什么是Promise"
-date: "2023-07-22"
+date: "2023-07-25"
 ---
 
 ## Promise
