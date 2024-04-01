@@ -4,7 +4,7 @@ import MyProfilePic from "@/components/MyProfilePic";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Yeezo's Blog",
+  title: "YiziSpace",
   description: "Created by Yeezo",
 };
 
